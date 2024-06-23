@@ -32,7 +32,7 @@ app.use('/books', bookRoute);
 app.use('/authors', authorRoute);
 
 // Catch-all for 404 errors
-app.get('*', (req, res) => res.status(404).json({ msg: "Page Not Found" }));
+app.get('*', (req, res) => res.status(404).json({ msg: "Page Not Found on 3000" }));
 
 // Start the server
 const PORT = process.env.PORT || 3000;

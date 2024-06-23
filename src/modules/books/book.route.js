@@ -5,11 +5,13 @@ const route = Router()
 
 
 route.get('/',BC.getBook)
+route.get('/gbwa',BC.getBookWithAuthor)
+
 
 
 route.post('/',BC.newBook)
-route.put('/:id',BC.updateBook)
- route.delete('/:id',BC.deleteBook)
+route.put('/:title',BC.updateBook)
+ route.delete('/:title',BC.deleteBook)
 
 
 

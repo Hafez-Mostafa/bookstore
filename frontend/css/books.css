@@ -1,0 +1,97 @@
+/* General body styles with background image */
+body {
+    background: url('https://cdn.tapeten.com/img/psk/AzIBqZuvho06R/fototapete-marchenhaftes-buch-95.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styles for the form */
+form {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* Styles for the labels */
+form label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Styles for the input fields */
+form input[type="text"] {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 24px;
+    border: 2px solid #333; /* Darker border */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Focus effect for input fields */
+form input[type="text"]:focus {
+    border-color: #e50914; /* Netflix red */
+    outline: none;
+}
+
+/* Specific styles for each input field */
+.nameid {
+    border-color: #e50914; /* Netflix red */
+}
+
+.bioid {
+    border-color: #ff9900; /* Netflix orange */
+}
+
+.bdateid {
+    border-color: #4caf50; /* Green */
+}
+
+/* Styles for the submit button */
+form input[type="submit"] {
+    background-color: #e50914; /* Netflix red */
+    color: #fff;
+    border: none;
+    padding: 16px 24px;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+/* Hover effect for the submit button */
+form input[type="submit"]:hover {
+    background-color: #b81d24; /* Darker red */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Active effect for the submit button */
+form input[type="submit"]:active {
+    background-color: #831010; /* Dark red */
+    transform: translateY(1px);
+}
+
+/* Additional styles for a clean look */
+form input[type="submit"]:focus {
+    outline: none;
+}

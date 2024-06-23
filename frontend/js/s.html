@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup Window Example</title>
+<link rel="stylesheet" href="../css/pop.css">
+<link rel="stylesheet" href="../css/author.css">
+
+</head>
+<body>
+
+<button onclick="openPopup()">Open Popup</button>
+
+<!-- The popup container -->
+<div id="popup" class="popup">
+ 
+</div>
+
+<script>
+
+    // Function to open the popup
+function openPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+// Close the popup if the user clicks outside of it
+window.onclick = function(event) {
+  var popup = document.getElementById("popup");
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+}
+
+</script>
+</body>
+</html>

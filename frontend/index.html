@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/author.css">
+    <link rel="stylesheet" href="./css/pop.css">
+    <title>Book Store</title>
+</head>
+
+<body>
+   
+
+    <!-- <img src="./media/WhatsApp Bild 2024-06-22 um 09.06.57_0901579f.jpg" alt="" srcset=""> -->
+    <div class="container">
+        
+         <!-- The popup container -->
+         <div id="popup" class="popup">
+            <div class="pop_up_window"></div>
+        </div>
+        
+        <div class="new" id="newbook" onclick="openPopup('author')">
+            <span  class="add">Add New Author</span>
+        
+        </div>
+        <div class="new" onclick="openPopup('book')">            
+            <span  class="add">Add New Book</span>
+        </div>
+        
+        
+       
+        <div class="updatepopup" id="updatepopup"></div>
+        <div id="books" class="books"></div>
+
+
+        <!-- <div class="newbook"> <a href="./pages/authors.html">Add New Author</a></div>
+        <div id="authors" class="authors"></div> -->
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/popup.js"></script>
+
+</body>
+
+</html>

@@ -13,7 +13,7 @@ const bookSchema = new Schema({
         type:Schema.Types.ObjectId,ref:"Author"
     },
     publishedDate:{ type:Date,
-    default:Date.now}
+    default:new Date()}
 
 },{timestamps:true})
 
