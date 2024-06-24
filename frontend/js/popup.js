@@ -1,5 +1,6 @@
 
 
+
 const authorInfo = () => {
     const pop_up_window = document.querySelector('.pop_up_window');
     pop_up_window.innerHTML = `
@@ -104,7 +105,7 @@ const bookInfo = async () => {
         newAuthor.textContent = 'New Author ...';
         newAuthor.setAttribute('value', 'new');
         select.appendChild(newAuthor);
-
+        
         select.addEventListener('change', function() {
             if (this.value === 'new') {
                 openPopup('author');

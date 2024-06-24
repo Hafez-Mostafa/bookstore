@@ -30,13 +30,15 @@ const displayBooks = async () => {
     console.log(data.books);
 };
 
-// Call displayBooks to load books on page load
+
+// newBook.style.display = 'block';
+// updatePopup.style.display = 'none';
 displayBooks();
 
 // Function to edit a book
 const editBook = async (index) => {
     const updatePopup = document.getElementById('updatepopup');
-    const newBook = document.getElementById('newbook');
+    const newBook = document.getElementById('books');
     newBook.style.display = 'none';
     updatePopup.style.display = 'block';
 
@@ -52,6 +54,9 @@ const editBook = async (index) => {
             <input onclick="updateBook(${index})" id="bttnid" type="submit" value="Update">
         </form>
     `;
+
+
+    // updatePopup.style.display = 'none';
 };
 
 // Function to update a book
@@ -83,7 +88,7 @@ const updateBook = async (index) => {
         displayBooks();
 
         const updatePopup = document.getElementById('updatepopup');
-        const newBook = document.getElementById('newbook');
+        const newBook = document.getElementById('books');
         newBook.style.display = 'block';
         updatePopup.style.display = 'none';
     } catch (error) {
