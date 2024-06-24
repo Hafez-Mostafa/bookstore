@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Popup Window Example</title>
-<link rel="stylesheet" href="../css/pop.css">
-<link rel="stylesheet" href="../css/author.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management Interface</title>
+    <link rel="stylesheet" href="../css/s.css">
+    
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Contact Management</h1>
+        </header>
+        <main>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="sender">Sender</label>
+                    <input type="text" id="sender" name="sender" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="previous_communication">Previous Communication</label>
+                    <textarea id="previous_communication" name="previous_communication" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="reason_for_reconnecting">Reason for Reconnecting</label>
+                    <textarea id="reason_for_reconnecting" name="reason_for_reconnecting" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="desired_outcome">Desired Outcome</label>
+                    <textarea id="desired_outcome" name="desired_outcome" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="closing_message">Closing Message</label>
+                    <textarea id="closing_message" name="closing_message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="image_attachment">Image Attachment</label>
+                    <input type="file" id="image_attachment" name="image_attachment" accept="image/*">
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="insertContact()">Insert</button>
+                    <button type="button" onclick="updateContact()">Update</button>
+                    <button type="button" onclick="deleteContact()">Delete</button>
+                    <button type="button" onclick="selectContact()">Select</button>
+                </div>
+            </form>
+        </main>
+    </div>
 
-<button onclick="openPopup()">Open Popup</button>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+    });
+});
 
-<!-- The popup container -->
-<div id="popup" class="popup">
- 
-</div>
-
-<script>
-
-    // Function to open the popup
-function openPopup() {
-  document.getElementById("popup").style.display = "block";
+function insertContact() {
+    console.log("Insert contact");
+    // Insert logic here
 }
 
-// Function to close the popup
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
+function updateContact() {
+    console.log("Update contact");
+    // Update logic here
 }
 
-// Close the popup if the user clicks outside of it
-window.onclick = function(event) {
-  var popup = document.getElementById("popup");
-  if (event.target == popup) {
-    popup.style.display = "none";
-  }
+function deleteContact() {
+    console.log("Delete contact");
+    // Delete logic here
 }
 
-</script>
+function selectContact() {
+    console.log("Select contact");
+    // Select logic here
+}
+
+  </script>
 </body>
 </html>

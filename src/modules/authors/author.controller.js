@@ -38,7 +38,7 @@ export const newAuthor = async (req, res, next) => {
         }
 
         // If the Author was successfully created, return a 201 status with the Author data
-        res.status(201).json({ message: 'Authors Page', author });
+        res.status(201).json({ message: 'Author added sucessfully!', author });
     } catch (error) {
         // If an error occurs, return a 500 status with the error message
         res.status(500).json({ error: error.message });
